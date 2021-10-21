@@ -1,0 +1,101 @@
+// px to rem
+@function rem($pixels, $context: $mainFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+  @return $pixels / $context * 1rem;
+}
+
+@mixin size($width,$height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  user-select: none;
+  transition: 150ms;
+  text-decoration: none;
+  text-align: center;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+
+  @media (hover: hover) {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &:hover, &:focus, &:active {
+    outline: none;
+  }
+
+  & svg {
+    & path {
+      transition: 150ms;
+    }
+  }
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
+
+@function wr($c, $mr) {
+  @if ($c > 1) {
+    @return calc(100% / #{$c} - #{$mr} + #{$mr} / #{$c});
+  }
+  @else {
+    @return 100%;
+  }
+}
+
+@function mr($c, $mr) {
+  @if ($c > 1) {
+    @return $mr;
+  }
+  @else {
+    @return 0;
+  }
+}
+
+@mixin grid ($cols, $margin-right, $margin-top) {
+  margin-right: $margin-right;
+
+  width: wr($cols, $margin-right);
+
+  &:nth-child(n + #{$cols}) {
+    margin-right: mr($cols, $margin-right);
+  }
+
+  &:nth-child(#{$cols}n) {
+    margin-right: 0;
+  }
+
+  &:nth-child(#{$cols}n - 1) {
+    margin-right: mr($cols, $margin-right);
+  }
+
+  &:nth-child(n + #{$cols}) {
+    margin-top: 0;
+  }
+
+  &:nth-child(n + #{$cols + 1}) {
+    margin-top: $margin-top;
+  }
+}
+
+@mixin fzEl($fzStart, $fzCurrent) {
+  font-size: calc(#{$fzCurrent} / #{$fzStart} * 1rem);
+}

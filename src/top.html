@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="ru-UA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Топ лекции и курсы. Онлайн-обучение и медиатека видеолекций от экспертов">
+    <meta name="keywords" content="курсы, лекции, обучение, дистанционно, онлайн, электронные курсы, эксперты, кураторы">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="Перерва Константин Николаевич">
+    <meta name="copyright" content="Все права принадлежат Перерве Константину Николаевичу">
+    <title>Топ</title>
+    <link type="image/x-icon" rel="shortcut icon" href="static/favicon.ico">
+</head>
+<body style="background: #000;">
+    <div class="wrapper" id="wrapper">
+        <header class="header">
+            <div class="header-hold">
+                <div class="header-hold__inner">
+                    <div class="header-hold__btn-toggle">
+                        <button type="button" class="button-toggle-menu" data-button="menu">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.5 10H17.5" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.5 5L17.5 5" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.5 15L17.5 15" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="header-hold__logo">
+                        <a href="/" class="logo">
+                            <img src="assets/img/svg/logo.svg" alt="logo" />
+                        </a>
+                    </div>
+
+                    <div class="header-hold__menu">
+                        <nav class="menu">
+                            <ul class="menu-list">
+                                <li class="menu-list__item">
+                                    <a href="curators.html" class="menu-list__link button-link">Кураторы</a>
+                                </li>
+
+                                <li class="menu-list__item">
+                                    <a href="top.html" class="menu-list__link button-link">Топ</a>
+                                </li>
+
+                                <li class="menu-list__item">
+                                    <a href="categories.html" class="menu-list__link button-link">Категории</a>
+                                </li>
+
+                                <li class="menu-list__item">
+                                    <a href="new.html" class="menu-list__link button-link">Новые</a>
+                                </li>
+
+                                <li class="menu-list__item">
+                                    <a href="in_trend.html" class="menu-list__link button-link">В тренде</a>
+                                </li>
+
+                                <li class="menu-list__item">
+                                    <a href="about.html" class="menu-list__link button-link">О сервисе</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="header-hold__block">
+                        <div class="search-box">
+                            <button class="search" data-button="header-search" type="button">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.25 14.25C11.5637 14.25 14.25 11.5637 14.25 8.25C14.25 4.93629 11.5637 2.25 8.25 2.25C4.93629 2.25 2.25 4.93629 2.25 8.25C2.25 11.5637 4.93629 14.25 8.25 14.25Z" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.75 15.75L12.4875 12.4875" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="user-box">
+                            <button class="user" data-button="header-user" type="button">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.6667 17.5V15.8333C16.6667 14.9493 16.3155 14.1014 15.6904 13.4763C15.0652 12.8512 14.2174 12.5 13.3333 12.5H6.66668C5.78262 12.5 4.93478 12.8512 4.30965 13.4763C3.68453 14.1014 3.33334 14.9493 3.33334 15.8333V17.5" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.99999 9.16667C11.8409 9.16667 13.3333 7.67428 13.3333 5.83333C13.3333 3.99238 11.8409 2.5 9.99999 2.5C8.15904 2.5 6.66666 3.99238 6.66666 5.83333C6.66666 7.67428 8.15904 9.16667 9.99999 9.16667Z" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup-user" data-popup="log in" style="display: none">
+                    <div class="popup-user-box">
+                        <div class="popup-user-box__left">
+                            <div class="popup-user-content">
+                                <form action="!" class="form-user">
+                                    <div class="form-user__title">
+                                        <span>Войти в аккаунт</span>
+                                    </div>
+
+                                    <div class="form-user__row">
+                  <span class="form-user__ico">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.66665 2.6665H13.3333C14.0666 2.6665 14.6666 3.2665 14.6666 3.99984V11.9998C14.6666 12.7332 14.0666 13.3332 13.3333 13.3332H2.66665C1.93331 13.3332 1.33331 12.7332 1.33331 11.9998V3.99984C1.33331 3.2665 1.93331 2.6665 2.66665 2.6665Z" stroke="#858587" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M14.6666 4L7.99998 8.66667L1.33331 4" stroke="#858587" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+
+                                        <input type="text" class="form-user__input" placeholder="Введите email" />
+                                    </div>
+
+                                    <div class="form-user__row">
+                  <span class="form-user__ico">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.6667 7.3335H3.33333C2.59695 7.3335 2 7.93045 2 8.66683V13.3335C2 14.0699 2.59695 14.6668 3.33333 14.6668H12.6667C13.403 14.6668 14 14.0699 14 13.3335V8.66683C14 7.93045 13.403 7.3335 12.6667 7.3335Z" stroke="#858587" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M4.66669 7.3335V4.66683C4.66669 3.78277 5.01788 2.93493 5.643 2.30981C6.26812 1.68469 7.11597 1.3335 8.00002 1.3335C8.88408 1.3335 9.73192 1.68469 10.357 2.30981C10.9822 2.93493 11.3334 3.78277 11.3334 4.66683V7.3335" stroke="#858587" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+
+                                        <input type="password" class="form-user__input form-user__input_password" placeholder="Введите пароль" />
+
+                                        <button type="button" data-button="forgot password" class="form-user__link"><span>Забыли?</span></button>
+                                    </div>
+
+                                    <div class="form-user__button">
+                                        <input type="submit" value="Войти" class="button-form-submit button-form-submit_circle" />
+                                    </div>
+
+                                    <div class="form-user__button">
+                                        <button class="button button_circle button_dark" data-button="registration" type="button">
+                                            <span>Регистрация</span>
+                                        </button>
+                                    </div>
+                                </form>
+
+                                <div class="form-user__error"></div>
+                            </div>
+                        </div>
+
+                        <div class="popup-user-box__right">
+                            <div class="popup-user-content">
+                                <div class="form-user">
+                                    <div class="form-user__title">
+                                        <span>Войти с помощью</span>
+                                    </div>
+
+                                    <div class="form-user__button">
+                                        <button class="button-social" type="button">
+                    <span class="button-social__ico">
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 9.2067C18 8.5949 17.9494 7.9798 17.8414 7.37793H9.18051V10.8437H14.1402C13.9344 11.9614 13.2731 12.9502 12.3048 13.5786V15.8273H15.2637C17.0013 14.2598 18 11.9449 18 9.2067Z" fill="#4285F4"/>
+                        <path d="M9.1805 18C11.657 18 13.7455 17.203 15.2671 15.8273L12.3082 13.5786C11.4849 14.1275 10.4221 14.4384 9.18388 14.4384C6.78838 14.4384 4.75726 12.8543 4.02849 10.7246H0.975067V13.0428C2.53383 16.0819 5.70871 18 9.1805 18Z" fill="#34A853"/>
+                        <path d="M4.0251 10.7246C3.64047 9.60679 3.64047 8.39642 4.0251 7.27866V4.96045H0.975048C-0.327295 7.50353 -0.327295 10.4997 0.975048 13.0428L4.0251 10.7246Z" fill="#FBBC04"/>
+                        <path d="M9.1805 3.56176C10.4896 3.54191 11.7548 4.02474 12.7029 4.91101L15.3245 2.34147C13.6645 0.81364 11.4613 -0.0263378 9.1805 0.000118218C5.70871 0.000118218 2.53383 1.91818 0.975067 4.96062L4.02511 7.27882C4.75051 5.14581 6.785 3.56176 9.1805 3.56176Z" fill="#EA4335"/>
+                      </svg>
+                    </span>
+
+                                            <span>Продолжить с Google</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="form-user__button">
+                                        <button class="button-social" type="button">
+                    <span class="button-social__ico">
+                      <svg width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.43113 18H5.99994L6.00003 9.13231H8.68973L8.95264 6.24517H6.00013V4.28602C6.00013 3.22587 6.49395 2.8424 7.75872 2.8424C8.13053 2.82554 8.74116 2.83538 9 2.8424V0.161536C8.71025 0.0913116 7.91768 -0.0372492 7.06543 0.0103016C3.50629 0.0103016 2.43104 1.75629 2.43104 4.19077V6.24517H0V9.13231H2.43113V18Z" fill="#1877F2"/>
+                      </svg>
+                    </span>
+
+                                            <span>Продолжить с Facebook</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="form-user__button">
+                                        <button class="button-social" type="button">
+                    <span class="button-social__ico">
+                      <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.6437 15.5866C16.3385 16.2853 15.9772 16.9285 15.5586 17.5198C14.988 18.326 14.5209 18.884 14.1608 19.1938C13.6027 19.7025 13.0047 19.963 12.3644 19.9778C11.9047 19.9778 11.3503 19.8481 10.705 19.5852C10.0576 19.3235 9.4626 19.1938 8.91856 19.1938C8.348 19.1938 7.73607 19.3235 7.08153 19.5852C6.426 19.8481 5.89791 19.9852 5.49415 19.9988C4.88011 20.0247 4.26805 19.7568 3.65712 19.1938C3.26719 18.8568 2.77947 18.2791 2.1952 17.4606C1.56832 16.5865 1.05294 15.573 0.649178 14.4175C0.216766 13.1693 0 11.9607 0 10.7907C0 9.45032 0.292261 8.29431 0.877654 7.32557C1.33772 6.54745 1.94978 5.93364 2.71581 5.48304C3.48184 5.03243 4.30954 4.80281 5.2009 4.78812C5.68862 4.78812 6.32821 4.93762 7.12302 5.23144C7.91558 5.52625 8.42449 5.67575 8.64761 5.67575C8.81442 5.67575 9.37975 5.50094 10.3381 5.15243C11.2444 4.82923 12.0094 4.69541 12.636 4.74812C14.334 4.88392 15.6097 5.54723 16.458 6.74226C14.9394 7.65408 14.1882 8.9312 14.2032 10.5695C14.2169 11.8457 14.6841 12.9076 15.6022 13.7508C16.0183 14.1422 16.483 14.4446 17 14.6594C16.8878 14.9816 16.7695 15.2903 16.6437 15.5866ZM12.7493 0.400602C12.7493 1.40083 12.3806 2.33474 11.6456 3.19916C10.7586 4.22678 9.68572 4.82059 8.52228 4.72689C8.50746 4.60689 8.49886 4.4806 8.49886 4.34789C8.49886 3.38767 8.92068 2.36005 9.66977 1.51983C10.0438 1.09441 10.5194 0.740678 11.0962 0.458501C11.6717 0.180534 12.2162 0.0268124 12.7282 0.000488281C12.7431 0.134203 12.7493 0.267926 12.7493 0.400589V0.400602Z" fill="white"/>
+                      </svg>
+                    </span>
+
+                                            <span>Продолжить с Apple</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup-user" data-popup="forgot password" style="display: none">
+                    <div class="popup-user-box">
+                        <div class="popup-user-content">
+                            <form action="!" class="form-user">
+                                <div class="form-user__title">
+                                    <span>Восстановить пароль</span>
+                                </div>
+
+                                <div class="form-user__row">
+                <span class="form-user__ico">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.66665 2.6665H13.3333C14.0666 2.6665 14.6666 3.2665 14.6666 3.99984V11.9998C14.6666 12.7332 14.0666 13.3332 13.3333 13.3332H2.66665C1.93331 13.3332 1.33331 12.7332 1.33331 11.9998V3.99984C1.33331 3.2665 1.93331 2.6665 2.66665 2.6665Z" stroke="#858587" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14.6666 4L7.99998 8.66667L1.33331 4" stroke="#858587" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                                    <input type="text" class="form-user__input" placeholder="Введите email" />
+                                </div>
+
+                                <div class="form-user__button">
+                                    <input type="submit" value="Продолжить" class="button-form-submit button-form-submit_circle" />
+                                </div>
+                            </form>
+
+                            <div class="form-user__descr">
+                                <span>На ваш имейл будет отправлена ссылка для восстановления пароля.</span>
+                            </div>
+
+                            <div class="form-user__error"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup-user" data-popup="registration" style="display: none">
+                    <div class="popup-user-box">
+                        <div class="popup-user-content">
+                            <form action="!" class="form-user">
+                                <div class="form-user__title">
+                                    <span>Регистрация</span>
+                                </div>
+
+                                <div class="form-user__row error">
+                  <span class="form-user__ico">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.66665 2.6665H13.3333C14.0666 2.6665 14.6666 3.2665 14.6666 3.99984V11.9998C14.6666 12.7332 14.0666 13.3332 13.3333 13.3332H2.66665C1.93331 13.3332 1.33331 12.7332 1.33331 11.9998V3.99984C1.33331 3.2665 1.93331 2.6665 2.66665 2.6665Z" stroke="#858587" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M14.6666 4L7.99998 8.66667L1.33331 4" stroke="#858587" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+
+                                    <input type="text" class="form-user__input" placeholder="Введите email" value="maimail@fmail.com" />
+
+                                    <span class="form-user__status">
+                  <span class="icon-success">
+                    <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.3334 1L4.00008 8.33333L0.666748 5" stroke="#22B030" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+
+                  <span class="icon-error">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 4L4 12" stroke="#E25858" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M4 4L12 12" stroke="#E25858" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </span>
+                                </div>
+
+                                <div class="form-user__row success">
+                  <span class="form-user__ico">
+                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3333 14V12.6667C13.3333 11.9594 13.0523 11.2811 12.5522 10.781C12.0521 10.281 11.3739 10 10.6666 10H5.33329C4.62605 10 3.94777 10.281 3.44767 10.781C2.94758 11.2811 2.66663 11.9594 2.66663 12.6667V14" stroke="#858587" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.00004 7.33333C9.4728 7.33333 10.6667 6.13943 10.6667 4.66667C10.6667 3.19391 9.4728 2 8.00004 2C6.52728 2 5.33337 3.19391 5.33337 4.66667C5.33337 6.13943 6.52728 7.33333 8.00004 7.33333Z" stroke="#858587" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                     </svg>
+                  </span>
+
+                                    <input type="text" class="form-user__input" placeholder="Введите имя" value="Alexander" />
+
+                                    <span class="form-user__status">
+                  <span class="icon-success">
+                    <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.3334 1L4.00008 8.33333L0.666748 5" stroke="#22B030" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+
+                  <span class="icon-error">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 4L4 12" stroke="#E25858" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M4 4L12 12" stroke="#E25858" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </span>
+                                </div>
+
+                                <div class="form-user__row error">
+                  <span class="form-user__ico">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.6667 7.3335H3.33333C2.59695 7.3335 2 7.93045 2 8.66683V13.3335C2 14.0699 2.59695 14.6668 3.33333 14.6668H12.6667C13.403 14.6668 14 14.0699 14 13.3335V8.66683C14 7.93045 13.403 7.3335 12.6667 7.3335Z" stroke="#858587" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M4.66669 7.3335V4.66683C4.66669 3.78277 5.01788 2.93493 5.643 2.30981C6.26812 1.68469 7.11597 1.3335 8.00002 1.3335C8.88408 1.3335 9.73192 1.68469 10.357 2.30981C10.9822 2.93493 11.3334 3.78277 11.3334 4.66683V7.3335" stroke="#858587" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+
+                                    <input type="password" class="form-user__input" placeholder="Введите пароль" value="asdasdas" />
+
+                                    <span class="form-user__status">
+                  <span class="icon-success">
+                    <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.3334 1L4.00008 8.33333L0.666748 5" stroke="#22B030" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+
+                  <span class="icon-error">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 4L4 12" stroke="#E25858" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M4 4L12 12" stroke="#E25858" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </span>
+                                </div>
+
+                                <div class="form-user__button">
+                                    <input type="submit" value="Зарегистрироваться" class="button-form-submit button-form-submit_circle" disabled />
+                                </div>
+                            </form>
+
+                            <div class="form-user__error">
+                                <p>Недопустимый формат электронной почты.</p>
+
+                                <p>Пароль должен содержать как минимум одну прописную букву и цифры.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup-user" data-popup="search" style="display: none">
+                    <div class="popup-user-box">
+                        <div class="popup-user-content">
+                            <form action="!" class="form-user">
+                                <div class="form-user__title">
+                                    <span>Поиск</span>
+                                </div>
+
+                                <div class="form-user__row">
+                <span class="form-user__ico">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.25 14.25C11.5637 14.25 14.25 11.5637 14.25 8.25C14.25 4.93629 11.5637 2.25 8.25 2.25C4.93629 2.25 2.25 4.93629 2.25 8.25C2.25 11.5637 4.93629 14.25 8.25 14.25Z" stroke="#858587" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M15.75 15.75L12.4875 12.4875" stroke="#858587" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </span>
+
+                                    <input type="text" class="form-user__input" placeholder="Поиск" />
+                                </div>
+
+                                <div class="form-user__button">
+                                    <input type="submit" value="Найти" class="button-form-submit button-form-submit_circle" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-mob-menu" data-popup="menu" style="display: none">
+                <nav class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-list__item">
+                            <a href="curators.html" class="menu-list__link button-link">Кураторы</a>
+                        </li>
+
+                        <li class="menu-list__item">
+                            <a href="top.html" class="menu-list__link button-link">Топ</a>
+                        </li>
+
+                        <li class="menu-list__item">
+                            <a href="categories.html" class="menu-list__link button-link">Категории</a>
+                        </li>
+
+                        <li class="menu-list__item">
+                            <a href="new.html" class="menu-list__link button-link">Новые</a>
+                        </li>
+
+                        <li class="menu-list__item">
+                            <a href="in_trend.html" class="menu-list__link button-link">В тренде</a>
+                        </li>
+
+                        <li class="menu-list__item">
+                            <a href="about.html" class="menu-list__link button-link">О сервисе</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="section">
+                <div class="page-container">
+                    <h1 class="page-title">
+                        <span>Топ</span>
+                    </h1>
+
+                    <ul class="big-card-list">
+                        <li class="big-card-list__item">
+                            <div class="big-card">
+                                <a href="course.html" class="big-card__top">
+                                    <div class="big-card__img">
+                                        <img src="assets/img/img-big-card-1.jpg" alt="photo" />
+                                    </div>
+
+                                    <div class="big-card__title">
+                                        <span>Искусственный интеллект для мечтателей</span>
+                                    </div>
+                                </a>
+
+                                <div class="big-card__bottom">
+                                    <div class="big-card__button">
+                                        <ul class="buttons-list">
+                                            <li class="buttons-list__item">
+                                                <a href="curator_view.html" class="button-main button-main_small">
+                            <span class="button-main__ico">
+                              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.5002 7.99998C15.5002 7.24998 14.7952 6.79998 14.2327 6.46248C14.058 6.3638 13.8901 6.25356 13.7302 6.13248C13.7863 5.92936 13.8591 5.73119 13.9477 5.53998C14.1952 4.93998 14.5102 4.19748 14.0677 3.58998C13.6252 2.98248 12.8152 3.04248 12.1627 3.10248C11.9554 3.11707 11.7474 3.11707 11.5402 3.10248C11.4877 2.96748 11.4202 2.68998 11.3752 2.50998C11.2327 1.87248 11.0452 1.07748 10.3177 0.844979C9.59018 0.612479 9.00518 1.13748 8.51768 1.55748C8.35661 1.71784 8.18361 1.86576 8.00018 1.99998C7.81804 1.87777 7.64508 1.74241 7.48268 1.59498C6.99518 1.17498 6.38768 0.649979 5.68268 0.882479C4.97768 1.11498 4.76768 1.89498 4.62518 2.53248C4.58018 2.71248 4.51268 2.98998 4.46018 3.12498C4.25294 3.13957 4.04493 3.13957 3.83768 3.12498C3.18518 3.06498 2.38268 2.99748 1.93268 3.61248C1.48268 4.22748 1.80518 4.96248 2.05268 5.56248C2.14129 5.75369 2.21403 5.95186 2.27018 6.15498C2.11023 6.27606 1.94235 6.3863 1.76768 6.48498C1.20518 6.79998 0.500183 7.24998 0.500183 7.99998C0.500183 8.74998 1.20518 9.19998 1.76768 9.53748C1.94235 9.63616 2.11023 9.7464 2.27018 9.86748C2.21403 10.0706 2.14129 10.2688 2.05268 10.46C1.80518 11.06 1.49018 11.8025 1.93268 12.41C2.37518 13.0175 3.18518 12.9575 3.83768 12.8975C4.04493 12.8829 4.25294 12.8829 4.46018 12.8975C4.51268 13.0325 4.58018 13.31 4.62518 13.49C4.76768 14.1275 4.95518 14.9225 5.68268 15.155C6.41018 15.3875 6.99518 14.8625 7.48268 14.405C7.64508 14.2575 7.81804 14.1222 8.00018 14C8.18232 14.1222 8.35528 14.2575 8.51768 14.405C8.89905 14.8147 9.41053 15.0797 9.96518 15.155C10.085 15.1527 10.2038 15.1325 10.3177 15.095C11.0677 14.8625 11.2327 14.0675 11.3752 13.43C11.4202 13.25 11.4877 12.9725 11.5402 12.8375C11.7474 12.8229 11.9554 12.8229 12.1627 12.8375C12.8152 12.8975 13.6177 12.965 14.0677 12.35C14.5177 11.735 14.1952 11 13.9477 10.4C13.8591 10.2088 13.7863 10.0106 13.7302 9.80748C13.8901 9.6864 14.058 9.57616 14.2327 9.47748C14.7952 9.19998 15.5002 8.74998 15.5002 7.99998ZM10.8352 6.58998L7.83518 10.34C7.77019 10.4227 7.68853 10.4908 7.5955 10.5399C7.50247 10.589 7.40015 10.618 7.29518 10.625H7.25018C7.15148 10.6255 7.05363 10.6066 6.96225 10.5693C6.87088 10.532 6.78776 10.477 6.71768 10.4075L5.21768 8.90748C5.07646 8.76625 4.99711 8.57471 4.99711 8.37498C4.99711 8.17525 5.07646 7.98371 5.21768 7.84248C5.35891 7.70125 5.55046 7.62191 5.75018 7.62191C5.94991 7.62191 6.14146 7.70125 6.28268 7.84248L7.19018 8.74998L9.66518 5.65998C9.79416 5.52334 9.96973 5.44009 10.1571 5.4267C10.3446 5.41332 10.5302 5.47076 10.6773 5.58768C10.8244 5.7046 10.9222 5.87247 10.9514 6.05807C10.9807 6.24368 10.9392 6.4335 10.8352 6.58998Z" fill="#716FFF"/>
+                              </svg>
+                            </span>
+
+                                                    <span>Петрова Екатерина</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="buttons-list__item">
+                                                <button class="button-main button-main_small" type="button">
+                                                    <span>Категория 1</span>
+                                                </button>
+                                            </li>
+
+                                            <li class="buttons-list__item">
+                                                <button class="button-main button-main_small" type="button">
+                                                    <span>Курс</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="big-card-list__item">
+                            <div class="big-card">
+                                <a href="lecture.html" class="big-card__top">
+                                    <div class="big-card__img">
+                                        <img src="assets/img/img-big-card-2.jpg" alt="photo" />
+                                    </div>
+
+                                    <div class="big-card__title">
+                                        <span>Как попасть на Луну</span>
+                                    </div>
+                                </a>
+
+                                <div class="big-card__bottom">
+                                    <div class="big-card__button">
+                                        <ul class="buttons-list">
+                                            <li class="buttons-list__item">
+                                                <a href="curator_view.html" class="button-main button-main_small">
+                            <span class="button-main__ico">
+                              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.5002 7.99998C15.5002 7.24998 14.7952 6.79998 14.2327 6.46248C14.058 6.3638 13.8901 6.25356 13.7302 6.13248C13.7863 5.92936 13.8591 5.73119 13.9477 5.53998C14.1952 4.93998 14.5102 4.19748 14.0677 3.58998C13.6252 2.98248 12.8152 3.04248 12.1627 3.10248C11.9554 3.11707 11.7474 3.11707 11.5402 3.10248C11.4877 2.96748 11.4202 2.68998 11.3752 2.50998C11.2327 1.87248 11.0452 1.07748 10.3177 0.844979C9.59018 0.612479 9.00518 1.13748 8.51768 1.55748C8.35661 1.71784 8.18361 1.86576 8.00018 1.99998C7.81804 1.87777 7.64508 1.74241 7.48268 1.59498C6.99518 1.17498 6.38768 0.649979 5.68268 0.882479C4.97768 1.11498 4.76768 1.89498 4.62518 2.53248C4.58018 2.71248 4.51268 2.98998 4.46018 3.12498C4.25294 3.13957 4.04493 3.13957 3.83768 3.12498C3.18518 3.06498 2.38268 2.99748 1.93268 3.61248C1.48268 4.22748 1.80518 4.96248 2.05268 5.56248C2.14129 5.75369 2.21403 5.95186 2.27018 6.15498C2.11023 6.27606 1.94235 6.3863 1.76768 6.48498C1.20518 6.79998 0.500183 7.24998 0.500183 7.99998C0.500183 8.74998 1.20518 9.19998 1.76768 9.53748C1.94235 9.63616 2.11023 9.7464 2.27018 9.86748C2.21403 10.0706 2.14129 10.2688 2.05268 10.46C1.80518 11.06 1.49018 11.8025 1.93268 12.41C2.37518 13.0175 3.18518 12.9575 3.83768 12.8975C4.04493 12.8829 4.25294 12.8829 4.46018 12.8975C4.51268 13.0325 4.58018 13.31 4.62518 13.49C4.76768 14.1275 4.95518 14.9225 5.68268 15.155C6.41018 15.3875 6.99518 14.8625 7.48268 14.405C7.64508 14.2575 7.81804 14.1222 8.00018 14C8.18232 14.1222 8.35528 14.2575 8.51768 14.405C8.89905 14.8147 9.41053 15.0797 9.96518 15.155C10.085 15.1527 10.2038 15.1325 10.3177 15.095C11.0677 14.8625 11.2327 14.0675 11.3752 13.43C11.4202 13.25 11.4877 12.9725 11.5402 12.8375C11.7474 12.8229 11.9554 12.8229 12.1627 12.8375C12.8152 12.8975 13.6177 12.965 14.0677 12.35C14.5177 11.735 14.1952 11 13.9477 10.4C13.8591 10.2088 13.7863 10.0106 13.7302 9.80748C13.8901 9.6864 14.058 9.57616 14.2327 9.47748C14.7952 9.19998 15.5002 8.74998 15.5002 7.99998ZM10.8352 6.58998L7.83518 10.34C7.77019 10.4227 7.68853 10.4908 7.5955 10.5399C7.50247 10.589 7.40015 10.618 7.29518 10.625H7.25018C7.15148 10.6255 7.05363 10.6066 6.96225 10.5693C6.87088 10.532 6.78776 10.477 6.71768 10.4075L5.21768 8.90748C5.07646 8.76625 4.99711 8.57471 4.99711 8.37498C4.99711 8.17525 5.07646 7.98371 5.21768 7.84248C5.35891 7.70125 5.55046 7.62191 5.75018 7.62191C5.94991 7.62191 6.14146 7.70125 6.28268 7.84248L7.19018 8.74998L9.66518 5.65998C9.79416 5.52334 9.96973 5.44009 10.1571 5.4267C10.3446 5.41332 10.5302 5.47076 10.6773 5.58768C10.8244 5.7046 10.9222 5.87247 10.9514 6.05807C10.9807 6.24368 10.9392 6.4335 10.8352 6.58998Z" fill="#716FFF"/>
+                              </svg>
+                            </span>
+
+                                                    <span>Сидоров Иван</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="buttons-list__item">
+                                                <button class="button-main button-main_small" type="button">
+                                                    <span>Категория 3</span>
+                                                </button>
+                                            </li>
+
+                                            <li class="buttons-list__item">
+                                                <button class="button-main button-main_small" type="button">
+                                                    <span>Лекция</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="big-card-list__item">
+                            <div class="big-card">
+                                <a href="course.html" class="big-card__top">
+                                    <div class="big-card__img">
+                                        <img src="assets/img/img-big-card-3.jpg" alt="photo" />
+                                    </div>
+
+                                    <div class="big-card__title">
+                                        <span>Латинский язык: грамматический конструктор</span>
+                                    </div>
+                                </a>
+
+                                <div class="big-card__bottom">
+                                    <div class="big-card__button">
+                                        <ul class="buttons-list">
+                                            <li class="buttons-list__item">
+                                                <a href="curator_view.html" class="button-main button-main_small">
+                            <span class="button-main__ico">
+                              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.5002 7.99998C15.5002 7.24998 14.7952 6.79998 14.2327 6.46248C14.058 6.3638 13.8901 6.25356 13.7302 6.13248C13.7863 5.92936 13.8591 5.73119 13.9477 5.53998C14.1952 4.93998 14.5102 4.19748 14.0677 3.58998C13.6252 2.98248 12.8152 3.04248 12.1627 3.10248C11.9554 3.11707 11.7474 3.11707 11.5402 3.10248C11.4877 2.96748 11.4202 2.68998 11.3752 2.50998C11.2327 1.87248 11.0452 1.07748 10.3177 0.844979C9.59018 0.612479 9.00518 1.13748 8.51768 1.55748C8.35661 1.71784 8.18361 1.86576 8.00018 1.99998C7.81804 1.87777 7.64508 1.74241 7.48268 1.59498C6.99518 1.17498 6.38768 0.649979 5.68268 0.882479C4.97768 1.11498 4.76768 1.89498 4.62518 2.53248C4.58018 2.71248 4.51268 2.98998 4.46018 3.12498C4.25294 3.13957 4.04493 3.13957 3.83768 3.12498C3.18518 3.06498 2.38268 2.99748 1.93268 3.61248C1.48268 4.22748 1.80518 4.96248 2.05268 5.56248C2.14129 5.75369 2.21403 5.95186 2.27018 6.15498C2.11023 6.27606 1.94235 6.3863 1.76768 6.48498C1.20518 6.79998 0.500183 7.24998 0.500183 7.99998C0.500183 8.74998 1.20518 9.19998 1.76768 9.53748C1.94235 9.63616 2.11023 9.7464 2.27018 9.86748C2.21403 10.0706 2.14129 10.2688 2.05268 10.46C1.80518 11.06 1.49018 11.8025 1.93268 12.41C2.37518 13.0175 3.18518 12.9575 3.83768 12.8975C4.04493 12.8829 4.25294 12.8829 4.46018 12.8975C4.51268 13.0325 4.58018 13.31 4.62518 13.49C4.76768 14.1275 4.95518 14.9225 5.68268 15.155C6.41018 15.3875 6.99518 14.8625 7.48268 14.405C7.64508 14.2575 7.81804 14.1222 8.00018 14C8.18232 14.1222 8.35528 14.2575 8.51768 14.405C8.89905 14.8147 9.41053 15.0797 9.96518 15.155C10.085 15.1527 10.2038 15.1325 10.3177 15.095C11.0677 14.8625 11.2327 14.0675 11.3752 13.43C11.4202 13.25 11.4877 12.9725 11.5402 12.8375C11.7474 12.8229 11.9554 12.8229 12.1627 12.8375C12.8152 12.8975 13.6177 12.965 14.0677 12.35C14.5177 11.735 14.1952 11 13.9477 10.4C13.8591 10.2088 13.7863 10.0106 13.7302 9.80748C13.8901 9.6864 14.058 9.57616 14.2327 9.47748C14.7952 9.19998 15.5002 8.74998 15.5002 7.99998ZM10.8352 6.58998L7.83518 10.34C7.77019 10.4227 7.68853 10.4908 7.5955 10.5399C7.50247 10.589 7.40015 10.618 7.29518 10.625H7.25018C7.15148 10.6255 7.05363 10.6066 6.96225 10.5693C6.87088 10.532 6.78776 10.477 6.71768 10.4075L5.21768 8.90748C5.07646 8.76625 4.99711 8.57471 4.99711 8.37498C4.99711 8.17525 5.07646 7.98371 5.21768 7.84248C5.35891 7.70125 5.55046 7.62191 5.75018 7.62191C5.94991 7.62191 6.14146 7.70125 6.28268 7.84248L7.19018 8.74998L9.66518 5.65998C9.79416 5.52334 9.96973 5.44009 10.1571 5.4267C10.3446 5.41332 10.5302 5.47076 10.6773 5.58768C10.8244 5.7046 10.9222 5.87247 10.9514 6.05807C10.9807 6.24368 10.9392 6.4335 10.8352 6.58998Z" fill="#716FFF"/>
+                              </svg>
+                            </span>
+
+                                                    <span>Васечкин Петр</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="buttons-list__item">
+                                                <button class="button-main button-main_small" type="button">
+                                                    <span>Категория 2</span>
+                                                </button>
+                                            </li>
+
+                                            <li class="buttons-list__item">
+                                                <button class="button-main button-main_small" type="button">
+                                                    <span>Курс</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="big-card-list__item">
+                            <div class="big-card">
+                                <a href="course.html" class="big-card__top">
+                                    <div class="big-card__img">
+                                        <img src="assets/img/img-big-card-4.jpg" alt="photo" />
+                                    </div>
+
+                                    <div class="big-card__title">
+                                        <span>Практическая химия</span>
+                                    </div>
+                                </a>
+
+                                <div class="big-card__bottom">
+                                    <div class="big-card__button">
+                                        <ul class="buttons-list">
+                                            <li class="buttons-list__item">
+                                                <a href="curator_view.html" class="button-main button-main_small">
+                            <span class="button-main__ico">
+                              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.5002 7.99998C15.5002 7.24998 14.7952 6.79998 14.2327 6.46248C14.058 6.3638 13.8901 6.25356 13.7302 6.13248C13.7863 5.92936 13.8591 5.73119 13.9477 5.53998C14.1952 4.93998 14.5102 4.19748 14.0677 3.58998C13.6252 2.98248 12.8152 3.04248 12.1627 3.10248C11.9554 3.11707 11.7474 3.11707 11.5402 3.10248C11.4877 2.96748 11.4202 2.68998 11.3752 2.50998C11.2327 1.87248 11.0452 1.07748 10.3177 0.844979C9.59018 0.612479 9.00518 1.13748 8.51768 1.55748C8.35661 1.71784 8.18361 1.86576 8.00018 1.99998C7.81804 1.87777 7.64508 1.74241 7.48268 1.59498C6.99518 1.17498 6.38768 0.649979 5.68268 0.882479C4.97768 1.11498 4.76768 1.89498 4.62518 2.53248C4.58018 2.71248 4.51268 2.98998 4.46018 3.12498C4.25294 3.13957 4.04493 3.13957 3.83768 3.12498C3.18518 3.06498 2.38268 2.99748 1.93268 3.61248C1.48268 4.22748 1.80518 4.96248 2.05268 5.56248C2.14129 5.75369 2.21403 5.95186 2.27018 6.15498C2.11023 6.27606 1.94235 6.3863 1.76768 6.48498C1.20518 6.79998 0.500183 7.24998 0.500183 7.99998C0.500183 8.74998 1.20518 9.19998 1.76768 9.53748C1.94235 9.63616 2.11023 9.7464 2.27018 9.86748C2.21403 10.0706 2.14129 10.2688 2.05268 10.46C1.80518 11.06 1.49018 11.8025 1.93268 12.41C2.37518 13.0175 3.18518 12.9575 3.83768 12.8975C4.04493 12.8829 4.25294 12.8829 4.46018 12.8975C4.51268 13.0325 4.58018 13.31 4.62518 13.49C4.76768 14.1275 4.95518 14.9225 5.68268 15.155C6.41018 15.3875 6.99518 14.8625 7.48268 14.405C7.64508 14.2575 7.81804 14.1222 8.00018 14C8.18232 14.1222 8.35528 14.2575 8.51768 14.405C8.89905 14.8147 9.41053 15.0797 9.96518 15.155C10.085 15.1527 10.2038 15.1325 10.3177 15.095C11.0677 14.8625 11.2327 14.0675 11.3752 13.43C11.4202 13.25 11.4877 12.9725 11.5402 12.8375C11.7474 12.8229 11.9554 12.8229 12.1627 12.8375C12.8152 12.8975 13.6177 12.965 14.0677 12.35C14.5177 11.735 14.1952 11 13.9477 10.4C13.8591 10.2088 13.7863 10.0106 13.7302 9.80748C13.8901 9.6864 14.058 9.57616 14.2327 9.47748C14.7952 9.19998 15.5002 8.74998 15.5002 7.99998ZM10.8352 6.58998L7.83518 10.34C7.77019 10.4227 7.68853 10.4908 7.5955 10.5399C7.50247 10.589 7.40015 10.618 7.29518 10.625H7.25018C7.15148 10.6255 7.05363 10.6066 6.96225 10.5693C6.87088 10.532 6.78776 10.477 6.71768 10.4075L5.21768 8.90748C5.07646 8.76625 4.99711 8.57471 4.99711 8.37498C4.99711 8.17525 5.07646 7.98371 5.21768 7.84248C5.35891 7.70125 5.55046 7.62191 5.75018 7.62191C5.94991 7.62191 6.14146 7.70125 6.28268 7.84248L7.19018 8.74998L9.66518 5.65998C9.79416 5.52334 9.96973 5.44009 10.1571 5.4267C10.3446 5.41332 10.5302 5.47076 10.6773 5.58768C10.8244 5.7046 10.9222 5.87247 10.9514 6.05807C10.9807 6.24368 10.9392 6.4335 10.8352 6.58998Z" fill="#716FFF"/>
+                              </svg>
+                            </span>
+
+                                                    <span>Иванов Игорь</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="buttons-list__item">
+                                                <button class="button-main button-main_small" type="button">
+                                                    <span>Категория 4</span>
+                                                </button>
+                                            </li>
+
+                                            <li class="buttons-list__item">
+                                                <button class="button-main button-main_small" type="button">
+                                                    <span>Курс</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="page-pagination">
+                        <ul class="pagination-list">
+                            <li class="pagination-list__item">
+                                <a href="#" class="pagination-link active">1</a>
+                            </li>
+
+                            <li class="pagination-list__item">
+                                <a href="#" class="pagination-link">2</a>
+                            </li>
+
+                            <li class="pagination-list__item">
+                                <a href="#" class="pagination-link">3</a>
+                            </li>
+
+                            <li class="pagination-list__item">
+                                <a href="#" class="pagination-link">4</a>
+                            </li>
+
+                            <li class="pagination-list__item">
+                                <a href="#" class="pagination-link">25</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="feedback">
+            <div class="page-container">
+                <div class="feedback-box">
+                    <div class="feedback-box__item">
+                        <div class="feedback-title">
+                            <span>Новые лекции</span>
+                        </div>
+
+                        <div class="feedback-descr">
+                            <span>Введите свой адрес электронной почты, и мы пришлем вам несколько наших любимых лекций.</span>
+                        </div>
+                    </div>
+
+                    <div class="feedback-box__item">
+                        <form action="!" class="form-feedback">
+                            <div class="form-feedback__row">
+                                <div class="form-feedback__label">
+                                    <span class="form-feedback__ico">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.66659 2.66666H13.3333C14.0666 2.66666 14.6666 3.26666 14.6666 3.99999V12C14.6666 12.7333 14.0666 13.3333 13.3333 13.3333H2.66659C1.93325 13.3333 1.33325 12.7333 1.33325 12V3.99999C1.33325 3.26666 1.93325 2.66666 2.66659 2.66666Z" stroke="#858587" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.6666 4L7.99992 8.66667L1.33325 4" stroke="#858587" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+
+                                    <input type="text" class="form-feedback__input" placeholder="Введите email" />
+                                </div>
+
+                                <input type="submit" value="Отправить" class="form-feedback__submit" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="footer-hold">
+                    <div class="footer-hold__logo">
+                        <a href="/" class="logo">
+                            <img src="assets/img/svg/logo.svg" alt="logo" />
+                        </a>
+                    </div>
+
+                    <div class="footer-hold__menu">
+                        <nav class="menu">
+                            <ul class="menu-list">
+                                <li class="menu-list__item">
+                                    <a href="curators.html" class="menu-list__link button-link">Кураторы</a>
+                                </li>
+
+                                <li class="menu-list__item">
+                                    <a href="top.html" class="menu-list__link button-link">Топ лекции</a>
+                                </li>
+
+                                <li class="menu-list__item">
+                                    <a href="categories.html" class="menu-list__link button-link">Категории</a>
+                                </li>
+
+                                <li class="menu-list__item">
+                                    <a href="new.html" class="menu-list__link button-link">Новые</a>
+                                </li>
+
+                                <li class="menu-list__item">
+                                    <a href="in_trend.html" class="menu-list__link button-link">В тренде</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="footer-hold__soc-net">
+                        <nav class="soc-net">
+                            <ul class="soc-net-list">
+                                <li class="soc-net-list__item">
+                                    <a href="#" class="soc-net-link">
+                                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.49932 0.0037452L7.16515 0C4.54279 0 2.8481 1.73871 2.8481 4.42982V6.47227H0.501197C0.298396 6.47227 0.134171 6.63668 0.134171 6.83949V9.79876C0.134171 10.0016 0.298583 10.1658 0.501197 10.1658H2.8481V17.633C2.8481 17.8358 3.01233 18 3.21513 18H6.27717C6.47997 18 6.6442 17.8356 6.6442 17.633V10.1658H9.38828C9.59108 10.1658 9.75531 10.0016 9.75531 9.79876L9.75643 6.83949C9.75643 6.74211 9.71767 6.64886 9.64894 6.57994C9.58022 6.51103 9.48659 6.47227 9.38922 6.47227H6.6442V4.74086C6.6442 3.90868 6.84251 3.48622 7.92654 3.48622L9.49895 3.48566C9.70156 3.48566 9.86579 3.32124 9.86579 3.11863V0.370775C9.86579 0.168347 9.70175 0.00411972 9.49932 0.0037452Z" fill="white"/>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <li class="soc-net-list__item">
+                                    <a href="#" class="soc-net-link">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.00305 4.37854C6.4508 4.37854 4.38455 6.44704 4.38455 8.99704C4.38455 11.5493 6.45305 13.6155 9.00305 13.6155C11.5553 13.6155 13.6216 11.547 13.6216 8.99704C13.6216 6.44479 11.5531 4.37854 9.00305 4.37854ZM9.00305 11.9948C7.3463 11.9948 6.0053 10.653 6.0053 8.99704C6.0053 7.34104 7.34705 5.99929 9.00305 5.99929C10.6591 5.99929 12.0008 7.34104 12.0008 8.99704C12.0016 10.653 10.6598 11.9948 9.00305 11.9948Z" fill="white"/>
+                                            <path d="M12.7108 0.0576386C11.0548 -0.0196114 6.95302 -0.0158614 5.29552 0.0576386C3.83902 0.125889 2.55427 0.477638 1.51852 1.51339C-0.212476 3.24439 0.00877372 5.57689 0.00877372 8.99764C0.00877372 12.4986 -0.186226 14.7771 1.51852 16.4819C3.25627 18.2189 5.62252 17.9916 9.00277 17.9916C12.4708 17.9916 13.6678 17.9939 14.894 17.5191C16.5613 16.8719 17.8198 15.3816 17.9428 12.7049C18.0208 11.0481 18.0163 6.94714 17.9428 5.28964C17.7943 2.12989 16.0985 0.213639 12.7108 0.0576386ZM15.332 15.3366C14.1973 16.4714 12.623 16.3701 8.98102 16.3701C5.23102 16.3701 3.72727 16.4256 2.63002 15.3254C1.36627 14.0676 1.59502 12.0479 1.59502 8.98564C1.59502 4.84189 1.16977 1.85764 5.32852 1.64464C6.28402 1.61089 6.56527 1.59964 8.97052 1.59964L9.00427 1.62214C13.001 1.62214 16.1368 1.20364 16.325 5.36164C16.3678 6.31039 16.3775 6.59539 16.3775 8.99689C16.3768 12.7034 16.4473 14.2161 15.332 15.3366Z" fill="white"/>
+                                            <path d="M13.8045 5.27544C14.4006 5.27544 14.8838 4.79224 14.8838 4.19619C14.8838 3.60014 14.4006 3.11694 13.8045 3.11694C13.2085 3.11694 12.7253 3.60014 12.7253 4.19619C12.7253 4.79224 13.2085 5.27544 13.8045 5.27544Z" fill="white"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="footer-hold">
+                    <div class="footer-copy">
+                        <span>© 2021 Tocarra</span>
+                    </div>
+
+                    <div class="footer-hold__link">
+                        <a href="#" class="footer-link button-link">Поддержка</a>
+                    </div>
+
+                    <div class="footer-hold__link">
+                        <a href="#" class="footer-link button-link">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <span class="substrate" style="display: none"></span>
+    </div>
+
+    <a href="#wrapper" class="button-go-top">
+        <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.94555 0.179893L8.81528 3.95144C9.06157 4.19135 9.06157 4.58034 8.81528 4.82014C8.56921 5.05995 8.17011 5.05995 7.92406 4.82014L4.49994 1.4829L1.07593 4.82004C0.829759 5.05986 0.430697 5.05986 0.184627 4.82004C-0.0615424 4.58022 -0.0615424 4.19126 0.184627 3.95134L4.05442 0.179796C4.17752 0.0598869 4.33868 0 4.49992 0C4.66123 0 4.82251 0.0600038 4.94555 0.179893Z" fill="black"/>
+        </svg>
+    </a>
+</body>
+</html>

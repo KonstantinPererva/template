@@ -1,0 +1,16 @@
+.pagination-bullets-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 36px 0 0;
+
+  & .swiper-pagination-bullet {
+    background: #262626;
+    opacity: 1;
+    margin: 0 6px;
+  }
+
+  & .swiper-pagination-bullet-active {
+    background: $c-main;
+  }
+}

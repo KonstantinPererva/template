@@ -1,0 +1,25 @@
+.navigation-slider-curator {
+
+  & .button-slider {
+    @include button;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 155px;
+    z-index: 1;
+
+    &_prev {
+      left: -70px;
+    }
+
+    &_next {
+      right: -70px;
+    }
+
+    &:hover {
+      & svg path {
+        stroke: $c-main;
+      }
+    }
+  }
+}

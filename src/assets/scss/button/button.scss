@@ -1,0 +1,39 @@
+.button {
+  @include button;
+  min-width: 160px;
+  height: 36px;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 0 16px;
+  background: $c-main;
+  color: #000000;
+  border: 1px solid $c-main;
+
+  &:hover, &:focus, &:active {
+    color: $c-main;
+    background: #000000;
+  }
+
+  &_circle {
+    border-radius: 20px;
+    height: 42px;
+    font-size: 16px;
+    line-height: 19px;
+    width: 100%;
+  }
+
+  &_dark {
+    background: #242427;
+    color: $c-main;
+    border: 1px solid #242427;
+
+    &:hover, &:focus, &:active {
+      color: $c-main;
+      background: #000000;
+      border: 1px solid $c-main;
+    }
+  }
+}

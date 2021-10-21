@@ -1,0 +1,17 @@
+.section {
+  margin: 72px 0;
+
+  @media (max-width: 992px) {
+    margin: 48px 0;
+  }
+
+  &_top {
+    margin-top: 0;
+  }
+
+  &_small {
+    max-width: 330px;
+    width: 100%;
+    padding: 0 15px;
+  }
+}

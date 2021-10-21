@@ -1,0 +1,23 @@
+.big-card-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    flex-shrink: 0;
+    @include grid(2, 30px, 30px);
+
+    @media (max-width: 570px) {
+      @include grid(1, 15px, 15px);
+    }
+
+    .profile-media-box & {
+      @media (max-width: 1151px) {
+        @include grid(1, 30px, 30px);
+      }
+
+      @media (max-width: 738px) {
+        @include grid(1, 15px, 15px);
+      }
+    }
+  }
+}

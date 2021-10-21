@@ -1,0 +1,49 @@
+.material-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #191919;
+  padding: 12px;
+  border-radius: 15px;
+  margin: 0 0 72px;
+
+  @media (max-width: 738px) {
+    display: block;
+    padding: 24px;
+  }
+
+  &__button {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 738px) {
+      display: block;
+      text-align: center;
+      max-width: 242px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    & button {
+      margin-right: 14px;
+    }
+  }
+
+  &__info {
+    white-space: nowrap;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    letter-spacing: 0.154px;
+    color: #FFFFFF;
+    margin: 0 12px;
+
+    @media (max-width: 738px) {
+      text-align: center;
+      margin: 24px 0 0;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.curator-card {
+  display: block;
+  width: 255px;
+  //height: 401px;
+  background: #0C0C10;
+  border: 1px solid #181821;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: border-color 150ms;
+
+  &:hover {
+    border-color: $c-main;
+  }
+
+  &:hover &__name {
+    color: $c-main;
+  }
+
+  .curators-list & {
+    @media (max-width: 1151px) {
+      width: 100%;
+    }
+  }
+
+  &__img {
+    //height: 340px;
+    position: relative;
+    padding: 134% 0 0;
+    overflow: hidden;
+
+    & img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  &__bottom {
+    padding: 12px 18px;
+  }
+
+  &__name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.32px;
+    color: #FFFFFF;
+    transition: color 150ms;
+  }
+
+  &__status {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.154px;
+    color: #858587;
+  }
+}

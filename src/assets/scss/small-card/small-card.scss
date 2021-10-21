@@ -1,0 +1,36 @@
+.small-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #181821;
+  border-radius: 10px;
+  //max-width: 255px;
+  width: 100%;
+  height: 96px;
+  outline: none;
+  text-transform: none;
+  transition: 150ms;
+
+  background: #181821;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover, &:focus, &:active {
+    outline: none;
+    text-transform: none;
+    border: 1px solid $c-main;
+  }
+
+  &__title {
+    font-family: $f-kh;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $c-main;
+  }
+}

@@ -1,0 +1,50 @@
+.profile-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 43px 0;
+
+  @media (max-width: 1151px) {
+    justify-content: flex-start;
+  }
+
+  @media (max-width: 639px) {
+    display: block;
+  }
+
+  &__aside {
+    flex-shrink: 0;
+    display: block;
+    margin-right: 30px;
+    width: 255px;
+    background: #0C0C10;
+    border: 1px solid #181821;
+    border-radius: 10px;
+
+    @media (max-width: 639px) {
+      width: 290px;
+      margin: 0 auto 48px;
+    }
+  }
+
+  &__form {
+    margin: 0 0 35px;
+  }
+
+  &__hold {
+    @media (max-width: 1151px) {
+      width: 290px;
+    }
+
+    @media (max-width: 639px) {
+      margin: 0 auto;
+    }
+
+    &.profile-media-box {
+      @media (max-width: 1151px) {
+        max-width: 540px;
+        width: 100%;
+      }
+    }
+  }
+}

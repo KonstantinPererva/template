@@ -1,0 +1,30 @@
+.button-main {
+  @include button;
+  min-width: 157px;
+  height: 42px;
+  background: #1a1a1a;
+  border-radius: 25px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.154px;
+  color: #FFFFFF;
+  border: 1px solid #1a1a1a;
+  padding: 0 12px;
+
+  &:hover {
+    color: $c-main;
+    border: 1px solid currentColor;
+  }
+
+  &__ico {
+    display: block;
+    margin: 0 8px 0 0;
+  }
+
+  &_small {
+    min-width: 74px;
+    height: 30px;
+  }
+}

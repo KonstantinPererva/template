@@ -1,0 +1,20 @@
+.button-more {
+  @include button;
+  height: 40px;
+  padding: 0 16px;
+  background: $c-main;
+  border-radius: 7px;
+  border: 1px solid $c-main;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: -0.154px;
+  color: #171717;
+
+  &:hover {
+    color: $c-main;
+    background: #171717;
+  }
+}

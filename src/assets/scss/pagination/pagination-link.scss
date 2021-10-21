@@ -1,0 +1,25 @@
+.pagination-link {
+  @include button;
+  display: inline-flex;
+  width: 39px;
+  height: 39px;
+  background: #0C0C10;
+  border: 1px solid #181821;
+  border-radius: 7px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: -0.32px;
+  color: #FFFFFF;
+
+  &:hover {
+    border: 1px solid $c-main;
+  }
+
+  &.active {
+    background: $c-main;
+    border: 1px solid $c-main;
+    color: #171717;
+  }
+}

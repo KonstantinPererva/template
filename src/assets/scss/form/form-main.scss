@@ -1,0 +1,152 @@
+.form-main {
+
+  &_forgot-password {
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__button {
+    .form-main_forgot-password & {
+      margin: 18px 0 0;
+    }
+  }
+
+  &__ico {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+  }
+
+  &__descr {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: -0.154px;
+    color: #e7e6e7;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.45px;
+    color: #FFFFFF;
+    margin: 0 0 13px;
+  }
+
+  &__row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .profile-form & {
+      @media (max-width: 1151px) {
+        display: block;
+      }
+    }
+
+
+    .form-main_forgot-password & {
+      margin: 0 0 14px;
+    }
+  }
+
+  &__input {
+    width: 255px;
+    height: 36px;
+    background: #0C0C10;
+    border: 1px solid #2C2C37;
+    border-radius: 5px;
+    padding: 0 13px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 34px;
+    letter-spacing: -0.32px;
+    color: #FFFFFF;
+    
+    @include placeholder {
+      color: #858587;
+    }
+
+    .profile-form & {
+      @media (max-width: 1151px) {
+        width: 100%;
+      }
+    }
+
+    &[disabled] {
+      color: #3d3d40;
+
+      .form-main_forgot-password & {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 34px;
+        letter-spacing: -0.32px;
+      }
+    }
+
+    .form-main_forgot-password & {
+      width: 100%;
+      margin: 0;
+      padding-left: 36px;
+    }
+  }
+
+  &__password {
+    position: relative;
+    margin: 0 30px 0 0;
+
+    @media (max-width: 1151px) {
+      margin: 0 0 55px;
+    }
+
+    & a.main-link {
+      display: inline-block;
+      vertical-align: top;
+      position: absolute;
+      left: 0;
+      top: calc(100% + 17px);
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: -0.32px;
+      text-decoration: none;
+      color: $c-main;
+      transition: 150ms;
+      border-bottom: 1px solid currentColor;
+      user-select: none;
+      outline: none;
+
+      &:hover, &:focus, &:active {
+        text-decoration: none;
+        outline: none;
+        border-bottom: 1px solid transparent;
+      }
+    }
+  }
+  
+  &__label {
+    position: relative;
+    margin: 0 30px 0 0;
+
+    @media (max-width: 1151px) {
+      margin: 0 0 15px;
+    }
+  }
+}

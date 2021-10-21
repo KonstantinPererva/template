@@ -1,0 +1,20 @@
+.page-title {
+  font-family: $f-kh;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 42px;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px rgba(250,223,130,.8);
+  margin: 0 0 32px;
+
+  @media (max-width: 992px) {
+    font-size: 28px;
+    line-height: 125%;
+    margin: 0 0 24px;
+  }
+
+  .wr-page-title & {
+    margin: 0;
+  }
+}

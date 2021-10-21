@@ -1,0 +1,19 @@
+.feedback-descr {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 135%;
+  letter-spacing: 0.8px;
+  color: #433931;
+  max-width: 445px;
+  width: 100%;
+
+  @media (max-width: 992px) {
+    font-size: 16px;
+    margin-top: 8px;
+  }
+
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+}

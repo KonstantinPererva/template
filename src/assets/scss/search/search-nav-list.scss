@@ -1,0 +1,17 @@
+.search-nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 420px) {
+    display: block;
+  }
+
+  &__item {
+    margin: 0 8px 16px;
+
+    @media (max-width: 420px) {
+      margin: 0 0 8px;
+    }
+  }
+}

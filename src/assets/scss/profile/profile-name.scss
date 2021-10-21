@@ -1,0 +1,44 @@
+.profile-name {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin: 0 12px 0 0;
+  min-width: 0;
+
+  &__ico {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background: $c-main;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: -0.32px;
+    color: #000000;
+    margin: 0 12px 0 0;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.32px;
+    color: #FFFFFF;
+    min-width: 0;
+
+
+    & span {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
+    }
+  }
+}

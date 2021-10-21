@@ -1,0 +1,16 @@
+.feedback-title {
+  font-family: $f-kh;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 100%;
+  color: #000000;
+
+  @media (max-width: 992px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+}

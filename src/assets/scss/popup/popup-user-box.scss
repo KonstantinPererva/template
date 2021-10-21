@@ -1,0 +1,23 @@
+.popup-user-box {
+  overflow: hidden;
+  background: #0c0c10;
+  border-radius: 10px;
+  display: flex;
+
+  @media (max-width: 750px) {
+    display: block;
+  }
+
+  &__left {
+    flex-shrink: 0;
+  }
+
+  &__right {
+    flex-shrink: 0;
+    border-left: 1px solid #2C2C37;
+
+    @media (max-width: 750px) {
+      border-top: 1px solid #2C2C37;
+    }
+  }
+}

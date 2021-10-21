@@ -1,0 +1,41 @@
+.button-form-submit {
+  @include button;
+  min-width: 160px;
+  height: 36px;
+  background: $c-main;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  border: 1px solid $c-main;
+  padding: 0 16px;
+
+  &:hover, &:focus, &:active {
+    color: $c-main;
+    background: #000000;
+  }
+
+  .profile-form & {
+    @media (max-width: 1151px) {
+      min-width: auto;
+      width: 100%;
+    }
+  }
+
+  &_circle {
+    border-radius: 20px;
+    height: 42px;
+    font-size: 16px;
+    line-height: 19px;
+    width: 100%;
+  }
+
+  &[disabled] {
+    background: #242427;
+    border: 1px solid #242427;
+    color: #505052;
+    cursor: default;
+  }
+}

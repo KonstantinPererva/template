@@ -1,0 +1,11 @@
+.profile-panel {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 18px;
+  border-bottom: 1px solid #181821;
+
+  &__button {
+    flex-shrink: 0;
+  }
+}

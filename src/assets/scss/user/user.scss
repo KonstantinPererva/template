@@ -1,0 +1,15 @@
+.user {
+  @include button;
+
+  &:hover {
+    & svg path {
+      stroke: $c-main;
+    }
+  }
+
+  &.open {
+    & svg path {
+      stroke: $c-main;
+    }
+  }
+}

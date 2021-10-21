@@ -1,0 +1,37 @@
+.banner-title {
+  font-family: $f-kh;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 100%;
+  text-align: center;
+  color: $c-main;
+  margin: 40px 0 9px;
+  padding: 0 15px;
+  text-shadow: 2px 2px 4px rgba(250,223,130,.8);
+
+  @media (max-width: 992px) {
+    font-size: 28px;
+  }
+  
+  &_white {
+    color: #fff;
+    margin: 22px 0;
+  }
+
+  &_dark {
+    color: #000;
+  }
+
+  & span {
+    display: block;
+
+    @media (max-width: 480px) {
+      display: inline;
+    }
+  }
+
+  .banner-text & {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,12 @@
+.material-constitute-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    @include grid(2, 30px, 30px);
+
+    @media (max-width: 767px) {
+      @include grid(2, 15px, 15px);
+    }
+  }
+}

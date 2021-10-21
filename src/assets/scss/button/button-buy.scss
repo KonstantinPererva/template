@@ -1,0 +1,28 @@
+.button-buy {
+  @include button;
+  min-width: 170px;
+  height: 48px;
+  background: $c-main;
+  border-radius: 7px;
+  padding: 0 16px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.154px;
+  color: #171717;
+  border: 1px solid $c-main;
+
+  @media (max-width: 738px) {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  &:hover, &:focus, &:active {
+    background: #1a1a1a;
+    color: $c-main;
+  }
+}

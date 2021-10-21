@@ -1,0 +1,94 @@
+.form-feedback {
+  &__row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    @media (max-width: 767px) {
+      display: block;
+    }
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    height: 56px;
+    background: #F0F0F0;
+    border-radius: 10px 0 0 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 56px;
+    letter-spacing: 0.32px;
+    color: #000000;
+    padding: 0 24px;
+    flex-grow: 1;
+
+    @media (max-width: 767px) {
+      height: 36px;
+      border-radius: 5px;
+      padding-left: 36px;
+    }
+
+    @include placeholder {
+      font-size: 14px;
+      line-height: 56px;
+      color: #a8a8a8;
+
+      @media (max-width: 767px) {
+        color: #8b8b8b;
+      }
+    }
+  }
+
+  &__label {
+    position: relative;
+    display: block;
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  &__ico {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    @media (max-width: 767px) {
+      display: flex;
+    }
+  }
+
+  &__submit {
+    @include button;
+    display: block;
+    width: 160px;
+    height: 56px;
+    background: #000;
+    color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    border-radius: 0 50px 50px 0;
+    padding: 0 24px;
+
+    @media (max-width: 767px) {
+      height: 42px;
+      border-radius: 25px;
+      width: 100%;
+      background: $c-main;
+      color: #000;
+      margin-top: 16px;
+    }
+
+    &:hover, &:focus, &:active {
+      background: #181821;
+      color: $c-main;
+    }
+  }
+}

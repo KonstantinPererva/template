@@ -1,0 +1,11 @@
+.logo {
+  display: block;
+  text-decoration: none;
+  outline: none;
+  border: 0;
+
+  &:hover, &:focus, &:active {
+    outline: none;
+    text-decoration: none;
+  }
+}

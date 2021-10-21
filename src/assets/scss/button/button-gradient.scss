@@ -1,0 +1,40 @@
+.button-gradient {
+  @include button;
+  min-width: 150px;
+  height: 36px;
+  border-radius: 20px;
+  background: #242427;
+  color: #fff;
+  padding: 0 15px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  border: 1px solid transparent;
+
+  &:hover, &:focus, &:active {
+    border: 1px solid $c-main;
+    color: $c-main;
+  }
+  
+  &.active {
+    background: linear-gradient(89.18deg, #FADF82 -0.26%, #996BF3 100.29%), #242427;
+    color: #000;
+    border: 0;
+    cursor: default;
+
+    &:hover, &:focus, &:active {
+      background: linear-gradient(89.18deg, #FADF82 -0.26%, #996BF3 100.29%), #242427;
+      color: #000;
+      border: 0;
+      cursor: default;
+    }
+  }
+
+  .search-nav-list & {
+    @media (max-width: 420px) {
+      max-width: none;
+      width: 100%;
+    }
+  }
+}

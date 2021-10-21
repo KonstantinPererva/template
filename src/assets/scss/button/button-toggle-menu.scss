@@ -1,0 +1,27 @@
+.button-toggle-menu {
+  @include button;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & svg path {
+    transition: 300ms;
+  }
+
+  &.open {
+    & svg path {
+      &:nth-child(1) {
+        opacity: 0;
+        d: path("M 10 10 H 10");
+      }
+
+      &:nth-child(2) {
+        d:path("M2.5 5L17 15");
+      }
+
+      &:nth-child(3) {
+        d:path("M2.5 15L17 5");
+      }
+    }
+  }
+}

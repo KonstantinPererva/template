@@ -1,0 +1,16 @@
+.footer {
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 86px;
+    background: #0B0A14;
+  }
+
+  &__bottom {
+    min-height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

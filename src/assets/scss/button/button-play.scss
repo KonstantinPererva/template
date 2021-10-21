@@ -1,0 +1,19 @@
+.button-play {
+  @include button;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 56px;
+  height: 56px;
+  margin: auto;
+  padding: 0;
+  border-radius: 100%;
+
+  &:hover {
+    & svg path {
+      fill: #1a1a1a;
+    }
+  }
+}

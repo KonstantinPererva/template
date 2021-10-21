@@ -1,0 +1,13 @@
+.buttons-list {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  .banner__button & {
+    justify-content: center;
+  }
+
+  &__item {
+    margin: 0 8px 8px 0;
+  }
+}

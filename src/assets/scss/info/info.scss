@@ -1,0 +1,25 @@
+.info {
+  display: flex;
+  align-items: center;
+
+  .big-card & {
+    padding: 10px 0 0;
+  }
+
+  &__price {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: $c-main;
+  }
+
+  &__date {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+    margin: 0 0 0 20px;
+  }
+}
